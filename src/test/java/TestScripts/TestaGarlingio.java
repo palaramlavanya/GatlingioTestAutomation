@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.concurrent.TimeUnit;
+
 public class TestaGarlingio extends BaseSetupChrome {
     String Url = "https://computer-database.gatling.io/computers/";
 
@@ -20,12 +22,10 @@ public class TestaGarlingio extends BaseSetupChrome {
     }
     @Test(priority = 2)
     public void submitNewComputer() throws InterruptedException {
-        Thread.sleep(3);
         driver.findElement(By.name("name")).click();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.findElement(By.name("name")).sendKeys("Compaq Systems");
-        Thread.sleep(3);
         driver.findElement(By.name("introduced")).sendKeys("2021-10-01");
-        Thread.sleep(3);
         //use xpath to click save new computer
         driver.findElement(By.xpath("/html/body/section/form/div/input")).click();
     }
