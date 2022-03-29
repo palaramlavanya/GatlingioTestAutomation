@@ -26,6 +26,7 @@ public class TestaGarlingio extends BaseSetupChrome {
         Thread.sleep(3);
         driver.findElement(By.name("introduced")).sendKeys("2021-10-01");
         Thread.sleep(3);
+        //use xpath to click save new computer
         driver.findElement(By.xpath("/html/body/section/form/div/input")).click();
     }
 }
