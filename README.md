@@ -20,3 +20,5 @@ Currently, it runs only on the chrome browser.
   Download and update the chromedriver path (step3 from Prerequisites)
   Edit and change configuration run to "Test Scripts" (on the intellij)
   
+**Results:**![gartilo](https://user-images.githubusercontent.com/102626297/160716256-9a02d93e-7f37-41e4-bc39-fe56d7e9fb2f.png)
+![Resultsfile](https://user-images.githubusercontent.com/102626297/160716258-c233dd3c-2821-4a54-8219-2657d3021463.png)
